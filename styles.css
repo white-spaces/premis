@@ -1,0 +1,65 @@
+/* Global static styles */
+
+body, html {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    background-color: #262635;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Scroll bar stíll */
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+
+/* Text Sizing Pre defined styles */
+
+h5 {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+}
+
+/* Pre defined styles */
+.bg-color {
+    background-color: #262635!important;
+}
+
+.txt-color {
+    color: #262635!important;
+}
+
+.contain {
+    background-size: contain!important;
+}
+
+.transition {
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
