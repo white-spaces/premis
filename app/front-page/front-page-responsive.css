@@ -1,0 +1,145 @@
+/* Large Screen - 1824px */
+
+@media only screen and (max-width: 1580px) {
+    .frettir-dagsins {
+        min-height: 1970px;
+    }
+}
+
+@media only screen and (max-width: 1406px) {
+    footer {
+        padding: 100px 0px;
+    }
+
+    .footer-section {
+        padding: 0 0 0 50px;
+    }
+}
+
+/* Common Screen - 1366px */
+
+@media only screen and (max-width: 1366px) {
+    /* Navbar stílar */
+    .brand-logo {
+        margin-left: 2.5%;
+    }
+
+    nav ul {
+        margin-right: 2.5%;
+    }
+}
+
+/* Desktop & Laptops - 1224px */
+
+@media only screen and (max-width: 1224px) {
+    /* Navbar Stílar */
+    nav ul {
+        width: auto;
+    }
+
+    nav li {
+        margin: 0 15px;
+        font-size: 0.9rem;
+    }
+
+    /*fretta stilar */
+
+    .frettir {
+        width: 100%;
+    }
+
+    .frettir-dagsins {
+        width: 100%
+    }
+
+
+    .frettir-dagsins {
+        min-height: 0px;
+    }
+
+    .footer-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .footer-section li, .footer-section p {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* frettir second break - 824px */
+
+@media only screen and (max-width: 824px) {
+
+}
+
+/* Ipads - 768px (portrait) */
+
+@media only screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .social-footer {
+        width: 50%;
+        top: 100px; 
+        padding: 0;
+        left: 25%;
+        text-align: center;
+    }
+
+    .footer-section {
+        height: 50%;
+        width: 50%;
+    }
+
+    footer {
+        height: 680px;
+    }
+
+    .social-button {
+        margin: 0;
+        width: 33.333%;
+
+    }
+}
+
+/* Smartphone - 480px (landscape) */
+
+@media only screen and (max-width: 480px) {
+
+    #myndskeid {
+        height: 100vh;
+    }
+
+    .frettir {
+        padding-left: 0;
+    }
+
+    .footer-brand-logo {
+        height: 60px;
+    }
+
+    .footer-section p, .footer-section li {
+        font-size: 0.7rem;
+    }
+
+    .footer-section h2 {
+        margin-top: 32px;
+        font-size: 1.2rem;
+    }
+
+    .social-footer {
+        top: 40px;
+    }
+
+    .social-footer h2 {
+        margin-top: 0;
+    }
+
+
+}

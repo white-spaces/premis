@@ -1,0 +1,110 @@
+.frett-nyasta {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 360px;
+    margin: 0px 0px 30px 0px;
+    box-sizing: border-box!important;
+    background: #fafafa;
+    border-radius: 2px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,.1);
+    
+    cursor: pointer;
+    
+}
+
+.frett:hover .title::before {
+    border-left: 9px solid rgba(0,0,0,.8);
+    border-top: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid rgba(0,0,0,.7);
+    top: -18px;
+}
+
+.frett-banner{
+    position: relative;
+    height: 55%;
+    width: 100%;
+    background-size: cover!important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: auto;
+    -webkit-filter: grayscale(10%);
+    -moz-filter: grayscale(10%);
+    -o-filter: grayscale(10%);
+    filter: grayscale(10%);
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.category {
+    width: 22.5%;
+    color: #fafafa;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top-left-radius: 2px;
+}
+
+/* litir fyrir categoríur sem fara eftir hvað categorían heitir */
+
+.Heilsa {
+    background-color: #99b898;
+}
+
+.Tækni {
+    background-color: #2a363b;
+}
+
+.Listin {
+    background-color: #c06c84;
+}
+
+.Viðskipti {
+    background-color: #355c7d;
+}
+
+.title-nyasta {
+    height: 35px;
+    text-align: right;
+    padding-top: 7.5px;
+    width: 100%;
+    box-sizing: border-box;
+    left: 0;
+    position: relative;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.frett-nyasta h5 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-right: 5px;
+    color: #fafafa!important;
+    text-transform: uppercase;
+}
+
+.frett-nyasta p {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+#date {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    margin-lefT: 15px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+#paragraph {
+    margin: 5px 15px 15px 15px;
+    font-size: 0.9rem;
+    
+}
+
+
+

@@ -1,0 +1,25 @@
+<div *ngFor="let frett of frettir; let i = index">
+    <div class="frett-nyasta" *ngIf="i < 4">
+        <div class="frett-banner" [ngStyle]="{'background-image': 'url(' + frett.photo + ')'}">
+            <div class="category {{frett.category}}">
+                {{frett.category}}
+            </div>
+        </div>
+
+        <div class="title-nyasta {{frett.category}}">
+            <h5>
+                {{frett.title}}
+            </h5> 
+        </div>
+
+        <p id="date" class="txt-color">
+            {{frett.date}}
+        </p>
+        
+        
+        <p id="paragraph" class="txt-color">
+            {{frett.content}}
+        </p>
+    
+    </div>
+</div>

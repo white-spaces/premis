@@ -1,0 +1,416 @@
+/* Stílar fyrir Navbar */
+
+nav {
+    position: relative;
+    height: 90px;
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+.brand-logo {
+    position: relative;
+    float: left;
+    height: 80px;
+    width: 160px;
+    margin: 10px 0 0 7.5%;
+    background: url('../../assets/logo/premis-logo.svg') no-repeat center center;
+}
+
+nav ul {
+    float: right;
+    box-sizing: border-box!important;
+    height: 100%;
+    width: 555px;
+    margin: 0 7.5% 0 0;
+    padding: 70px 0px 0px 0px;
+    list-style: none;
+}
+
+nav li, #login {
+    color: #fafafa;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 1px;
+
+}
+
+nav li {
+    position: relative;
+    float: left;
+    margin: 0 25px;
+    font-weight: 600;
+}
+
+nav li span {
+    opacity: .8;
+}
+
+nav li:hover span {
+    position: relative;
+    background: rgba(150, 150, 150, .6);
+    box-shadow: 0px 0px 0px 10px rgba(150, 150, 150, .6);
+    border-radius: 100px;
+}
+
+.active-nav-button {
+    position: relative;
+    background: rgba(150, 150, 150, .6);
+    box-shadow: 0px 0px 0px 10px rgba(150, 150, 150, .6);
+    border-radius: 100px;
+}
+
+
+#login {
+    position: relative;
+    height: 35px;
+    width: 100px;
+    top: -8px;
+    background-color: #262635;
+    border: none;
+    border-radius: 3px;
+}
+
+#login:hover {
+    -webkit-filter: invert(90%);
+    -moz-filter: invert(90%);
+    -o-filter: invert(90%);
+    filter: invert(90%);
+}
+
+/* Mobile Nav Stílar */ 
+
+.mobile-nav {
+    position: relative;
+    display: none;
+    height: 90px;
+    width: 100%;
+    z-index: 1;
+}
+
+.show-mobile-nav {
+    display: block!important;
+    -webkit-animation: reveal-mobile-nav ease-in-out 600ms  forwards;
+    -moz-animation: reveal-mobile-nav ease-in-out 600ms  forwards;
+    -o-animation: reveal-mobile-nav ease-in-out 600ms  forwards;
+    animation: reveal-mobile-nav ease-in-out 600ms forwards;
+}
+
+@keyframes reveal-mobile-nav {
+    0% {
+        transform: translateX(360px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;        
+    }
+}
+
+.mobile-nav-button {
+    position: relative;
+    float: right;
+    height: 35px;
+    width: 35px;
+    margin-top: 20px;
+    right: 2.5%;
+    background: url('../../assets/icons/menu-button.svg') no-repeat center center;
+    opacity: .8;
+    cursor: pointer;
+}
+
+.mobile-nav-button:hover {
+    opacity: 1;
+}
+
+.mobile-nav-dropdown {
+    position: fixed;
+    display: none;
+    height: 100vh;
+    width: 360px;
+    right: 0;
+    background: #262635;
+}
+
+.exit-button {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    right: 20px;
+    top: 20px;
+    background: url('../../assets/icons/exit-icon.svg') no-repeat center center;
+    cursor: pointer;
+    opacity: .8;
+    z-index: 10;
+}
+
+.exit-button:hover {
+    opacity: 1;
+}
+
+.mobile-nav-dropdown ul {
+    position: relative;
+    padding: 0;
+    color: #fafafa;
+    list-style: none;
+    padding-top: 50px;
+}
+
+.mobile-nav-dropdown li {
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-bottom: solid 1px #fafafa;
+    cursor: pointer;
+}
+
+.mobile-nav-dropdown li span {
+    opacity: .8;
+}
+
+.mobile-nav-dropdown li:hover span {
+    opacity: 1;
+}
+
+.social-media-icons {
+    position: relative;
+    box-sizing: border-box;
+    height: 60px;
+    width: 360px;
+    margin-top: 30px;
+    padding: 0 15%;
+}
+
+.social-media-icon {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    height: 35px;
+    width: 33%;
+    margin: 10px auto;
+    opacity: .8;
+    cursor: pointer;
+}
+
+.social-media-icon:hover {
+    opacity: 1;
+}
+
+.facebook {
+    background: url('../../assets//icons/facebook-logo-button.svg') no-repeat center center    
+}
+
+.instagram {
+    background: url('../../assets//icons/instagram-logo.svg') no-repeat center center
+}
+
+.twitter {
+    background: url('../../assets//icons/twitter-logo-button.svg') no-repeat center center
+}
+
+/* Stílar fyrir Banner kafla */
+
+.myndskeid-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+
+}
+
+#myndskeid {
+    position: fixed;
+    min-height: 100%;
+    min-width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../../assets/frettir/car-driving-with-balloons.jpeg') no-repeat scroll 0 0 #000;
+    background-size: cover;
+    -webkit-filter: grayscale(40%);
+    filter: grayscale(40%);
+    perspective: 1000;
+    backface-visibility: hidden;
+}
+
+/* Scroll ör */
+
+.down-arrow-container {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 85%;
+    right: 50%;
+    left: 50%;
+    cursor: pointer;
+}
+
+.down-arrow {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url('../../assets/icons/down-arrow.svg') no-repeat center center;
+}
+
+.down-arrow-container:hover .down-arrow {
+    -webkit-transform: translateY(7.5px);
+    -moz-transform: translateY(7.5px);
+    -o-transform: translateY(7.5px);    
+    transform: translateY(7.5px);
+}
+
+/* Stílar fyrir frétta kafla */
+
+.frettir-container {
+    position: relative;
+    min-height: 1800px;
+    width: 100%;
+    top: 100vh;
+    background-color: #262635;
+}
+
+.frettir {
+    position: relative;
+    float: left;
+    box-sizing: border-box!important;
+    height: 100%;
+    min-height: 1800px;
+    width: 75%;
+    padding-left: 2.5%;
+    background: #dfe3e6;
+}
+
+.frettir-dagsins {
+    position: relative;
+    float: left;
+    box-sizing: border-box!important;
+    height: 100%;
+    min-height: 1800px;
+    width: 25%;
+    background: #262635;
+    border-left: 2px solid rgba(0,0,0,.2);
+}
+
+.frettir-nyasta-nytt-container {
+    box-sizing: border-box;
+    margin: 30px 15px 50px 15px;
+    padding-top: 45px;
+    height: 90px;
+
+}
+
+.frettir-dagsins h2 {
+    color: #fafafa;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    margin-top: 16px;
+    margin-bottom: 48px;
+    text-transform: uppercase;
+}
+
+/* Footer stílar */
+
+footer {
+    position: relative;
+    box-sizing: border-box;
+    height: 480px;
+    width: 100%;
+    float: left;
+    bottom: 0;
+    top: 100vh;
+    background-color: #dfe3e6;
+    padding: 100px 50px
+}
+
+.footer-section {
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    height: 100%;
+    width: 33.3333%;
+    padding: 0 120px;
+    color: #262635;
+}
+
+
+.footer-section h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    margin-top: 60px;
+    font-weight: bolder;
+}
+
+.footer-brand-logo {
+    position: relative;
+    height: 100px;
+    width: auto;
+    margin-bottom: 25px;
+    background: url('../../assets/logo/premis-logo-dark.svg') no-repeat left center;
+}
+
+address p {
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-bottom: 7.5px;
+    font-style: normal;
+    opacity: 0.6;
+
+}
+
+.footer-navigation-container ul {
+    position: relative;
+    list-style: none;
+    padding-left: 0%;
+    text-align: left
+
+}
+
+.footer-navigation-container li {
+    font-weight: bold;
+    opacity: 0.6;
+    margin-bottom: 7.5px;
+    cursor: pointer;
+}
+
+.footer-navigation-container li:hover {
+    opacity: 0.8;
+}
+
+.social-button {
+    position: relative;
+    float: left;
+    height: 35px;
+    width: 35px;
+    margin: 0px 30px 30px 0px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.social-button:hover {
+    opacity: 1;
+}
+
+.facebook-footer {
+    background: url('../../assets/icons/facebook-logo-button-dark.svg') no-repeat center center;
+}
+
+.instagram-footer {
+    background: url('../../assets/icons/instagram-logo-dark.svg') no-repeat center center;
+}
+
+.twitter-footer {
+    background: url('../../assets/icons/twitter-logo-button-dark.svg') no-repeat center center;
+}
+
+
+

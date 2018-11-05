@@ -1,0 +1,61 @@
+/* Desktop & Laptops - 1224px */
+@media only screen and (max-width: 1224px) {
+    .frett-nyasta {
+        width: 45%;
+        margin: 0px 2.5% 30px 2.5%;
+    }
+}
+
+
+/* Ipads - 768px (portrait) */
+
+@media only screen and (max-width: 768px) {
+    .frett-nyasta h5 {
+        font-size: 1rem!important;
+    }
+
+    .title-nyasta {
+        height: 25px;
+    }
+
+    #paragraph, #date {
+        font-size: 0.8rem;
+    }
+
+
+}
+
+/* third frettir break -546px */
+
+@media only screen and (max-width: 546px) {
+    .frett-nyasta {
+        height: 300px;
+    }
+
+    .frett-banner {
+        height: 45%;
+    }
+
+    #paragraph, #date {
+        font-size: 0.7rem;
+    }
+
+    .category {
+        width: auto;
+    }
+
+}
+
+/* Smartphone - 480px (landscape) */
+@media only screen and (max-width: 480px) {
+    .frett-nyasta {
+        width: 90%;
+        margin: 0px 5% 30px 5%
+    }
+
+    .frett-banner {
+        height: 55%;
+    }
+    
+
+}

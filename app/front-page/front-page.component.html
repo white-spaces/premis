@@ -1,0 +1,184 @@
+<!-- Navigation Section -->
+
+<nav>
+  <div class="brand-logo contain"></div>
+
+  <ul>
+      <li>
+        <span class="transition active-nav-button">
+          Forsíða
+        </span>
+      </li>
+
+      <li>
+        <span class="transition">
+          Teymið
+        </span>
+      </li>
+
+      <li>
+        <span class="transition">
+          Fyrirspurnir
+        </span>
+      </li>
+      
+      <li> 
+        <button name="login" id="login" class="transition">
+            Skrá inn
+        </button> 
+      </li>
+
+  </ul>
+
+</nav>
+
+<!-- Mobile Navigation -->
+<div class="mobile-nav">
+  
+  <div class="brand-logo contain">
+
+  </div>
+  
+  <div class="mobile-nav-button contain transition" (click)="toggleMobileNav()">
+  
+  </div>
+
+  <div class="mobile-nav-dropdown" [ngClass]="{'show-mobile-nav': showMobileNav === true}">
+    <div class="exit-button transition contain" (click)="toggleMobileNav()">
+
+    </div>
+      <ul>
+          <li>
+            <span class="transition active-mobile-nav-button">
+              Forsíða
+            </span>
+          </li>
+    
+          <li>
+            <span class="transition">
+              Teymið
+            </span>
+          </li>
+    
+          <li>
+            <span class="transition">
+              Fyrirspurnir
+            </span>
+          </li>
+          
+          <li> 
+            <span name="login" class="transition">
+                Skrá inn
+            </span> 
+          </li>
+        </ul>
+
+          <div class="social-media-icons">
+            <div class="social-media-icon contain transition facebook">
+
+            </div>
+            <div class="social-media-icon contain transition instagram">
+
+            </div>
+            <div class="social-media-icon contain transition twitter">
+
+            </div>
+          </div>
+    
+  </div>
+      
+</div>
+
+<!-- Hero Banner -->
+<div class="myndskeid-container">
+
+  <video  autoplay mute loop id="myndskeid">
+    <source src="../../assets/hero-banner/Photo Studio.mp4" type="video/mp4">
+  </video>
+  
+  <!-- Scroll ör -->
+  <div class="down-arrow-container">
+      <div class="down-arrow contain transition" (click)="arrowFunction()">
+
+      </div>
+  </div>
+  
+</div>
+
+<div class="frettir-container">
+
+
+<div class="frettir">
+  
+
+  <!-- Ná í fréttir frá Frétta Componentnum -->
+  <app-frettir></app-frettir>
+
+
+</div>
+
+<div class="frettir-dagsins">
+  <div class="frettir-nyasta-nytt-container">
+      <h2>Nýasta Nýtt</h2>
+      
+      <frettir-nyasta-nytt></frettir-nyasta-nytt>
+      
+  </div>
+</div>
+
+</div>
+
+
+<!--Fótur-->
+<footer>
+  
+  
+  <div class="footer-section">
+    <div class="footer-location-container">
+      <div class="footer-brand-logo contain">
+
+      </div>
+      <address>
+        <p>Holtavegur 10</p> 
+        <p>104 Reykjavík </p> 
+        <p>547 0000 </p> 
+        <p>info@premis.is </p> 
+        <p>kt 540199 2569 </p>
+        <p>vsk nr 61001 </p>
+      </address>
+    </div>
+  </div>
+  
+  
+  <div class="footer-section">
+    <div class="footer-navigation-container">
+      <h2>Veftré</h2>
+      <ul>
+        <li class="transition">Forsíða</li>
+        <li class="transition">Teymið</li>
+        <li class="transition">Fyrirspurnir</li>
+        <li class="transition">FAQ</li>
+        <li class="transition">Skrá Inn</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="footer-section social-footer">
+    <div class="footer-social-container">
+      <h2>Samfélag</h2>
+      <div class="social-button contain transition facebook-footer">
+
+      </div>
+      <div class="social-button contain transition instagram-footer">
+
+      </div>
+      <div class="social-button contain transition twitter-footer">
+
+      </div>
+    </div>
+  </div>
+
+
+</footer>
+

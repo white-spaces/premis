@@ -1,0 +1,90 @@
+<div class="filter-container">
+    
+        <!-- Header -->
+        <h2 class="txt-color">
+          Fréttir
+        </h2>
+    
+        <span id="bookmark"></span>
+    
+    
+        <!-- Sía -->
+        <div class="filter contain transition">
+          <div class="activateDropdown" (click)="activateDropdown()">
+    
+          </div>
+            <div class="filter-dropdown" [ngClass]="{'dropdown-animation': dropdownActive === true, 'show-filter-dropdown': dropdownActive === true}">
+              <div class="subcategories">
+                <ul>
+                  <li class="transition" (click)="filterCategories('Bílar')">Bílar</li>
+                  <li class="transition" (click)="filterCategories('Elon Musk')">Elon</li>
+                  <li class="transition" (click)="filterCategories('Sálinn')">Sálinn</li>
+                  <li class="transition" (click)="filterCategories('Hlutabréf')">Hlutabréf</li>
+                  <li class="transition" (click)="filterCategories('Samfélag')">Samfélag</li>
+                </ul>
+                <br>
+              </div>
+            </div>      
+        </div>
+    
+        
+        <!-- Categoríur -->
+        <div class="categories">
+          <ul class="txt-color">
+            <li>
+              <button class="transition" [ngClass]="{'active-category': activeCategory === undefined}" (click)="filterCategories(undefined)">
+                Allt
+              </button>
+            </li>
+            <li>
+              <button class="transition" [ngClass]="{'active-category': activeCategory === 'Heilsa'}" (click)="filterCategories('Heilsa')">
+                Heilsa
+              </button>
+            </li>
+            <li>
+              <button class="transition" [ngClass]="{'active-category': activeCategory === 'Tækni'}" (click)="filterCategories('Tækni')">
+                Tækni
+              </button>
+            </li>
+            <li>
+              <button class="transition" [ngClass]="{'active-category': activeCategory === 'Listin'}" (click)="filterCategories('Listin')">
+                Listin
+              </button>
+            </li>
+            <li>
+              <button class="transition" [ngClass]="{'active-category': activeCategory === 'Viðskipti'}" (click)="filterCategories('Viðskipti')">
+                Viðskipti
+              </button>
+            </li>
+          </ul>
+        </div>
+    
+    
+      </div>
+        
+        <div class="frett" *ngFor="let frett of frettir">
+            <div class="frett-banner" [ngStyle]="{'background-image': 'url(' + frett.photo + ')'}">
+                <div class="category {{frett.category}}">
+                    {{frett.category}}
+                </div>
+            </div>
+
+            <div class="title {{frett.category}}">
+                <h5>
+                    {{frett.title}}
+                </h5> 
+            </div>
+
+            <p id="date" class="txt-color">
+                {{frett.date}}
+            </p>
+            
+            
+            <p id="paragraph" class="txt-color">
+                {{frett.content}}
+            </p>
+            <ul class="subcategory-container">
+              <li class="subcategory {{frett.category}}" *ngFor="let subcategories of frett.subcategories">{{subcategories}}</li>
+            </ul>
+        
+        </div>

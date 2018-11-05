@@ -1,0 +1,124 @@
+/* Break for frettir widht -1582px */
+@media only screen and (max-width: 1582px) {
+    .frett {
+        width: 40%;
+        margin: 0px 40px 30px 40px
+    }
+}
+
+/* Ipads - 1024px (landscape) */
+
+@media only screen and (max-width: 1024px) {
+    #date, #paragraph {
+        font-size: 0.8rem;
+    }
+}
+
+/* frettir second break - 824px */
+
+@media only screen and (max-width: 824px) {
+    .frett {
+        width: 42.5%;
+        height: 300px;
+        margin: 0px 20px 30px 20px;    
+    }
+
+    #date, #paragraph {
+        font-size: 0.8rem;
+    }
+
+    .frett-banner {
+        height: 50%;
+    }
+
+    .title {
+        height: 25px;
+        padding-top: 5px;
+    }
+
+    .title h5 {
+        font-size: 1rem!important
+    }
+
+    .categories li button {
+        margin: 0 10px;
+        font-size: 0.8rem;
+    }
+
+    .categories {
+        width: 100%;
+        margin: 25px 15px;
+        float: left;
+    }
+
+    .filter-container h2 {
+        font-size: 2rem;
+        margin-left: 25px;
+    }
+
+    .filter {
+        top: 60px;
+    }
+}
+
+/* third frettir break -546px */
+
+@media only screen and (max-width: 546px) {
+    .frett {
+        width: 80%;
+        margin: 0 auto 30px auto;
+        left: 7.5%;
+    }
+}
+
+/* Smartphone - 480px (landscape) */
+
+@media only screen and (max-width: 480px) {
+
+    .frett {
+        width: 85%;
+    }
+
+    .filter {
+        height: 25px;
+        width: 50px;
+        top: -10px;
+        right: 2.5%;
+    }
+
+    .categories {
+        margin: 40px 0px 40px 0px;
+    }
+
+    .categories li button {
+        margin: 10px 5px;
+        font-size: 0.7rem;
+    }
+
+    .categories ul {
+        width: 95%;
+        margin-left: 5%;
+    }
+
+    .categories li {
+        float: left;
+    }
+
+    .filter-container h2 {
+        margin-left: 7.5%
+    }
+
+    .filter-container {
+        margin: 30px 15px 15px 0;
+    }
+
+    .subcategory {
+        font-size: 0.7rem;
+    }
+
+    #paragraph, #date {
+        font-size: 0.7rem;
+    }
+
+}
+
